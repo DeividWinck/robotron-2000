@@ -33,6 +33,10 @@ const pecas = {
         "velocidade": -2
     }
 }
+const robo = document.querySelector(".robo")
+const cores = document.querySelectorAll("[data-cores")
+
+console.log(cores)
 
 controle.forEach( (elemento) => {
     elemento.addEventListener("click", (evento) => {
@@ -56,3 +60,10 @@ function atualizaEstatistica(peca){
         elemento.textContent = parseInt(elemento.textContent) + pecas[peca][elemento.dataset.estatistica]
     })
 }
+
+cores.forEach( (elemento) => {
+    elemento.addEventListener("click", (evento) => {
+        robo.src= elemento.dataset.cores
+    })
+})
+

@@ -65,6 +65,19 @@ main {
     height: 80%;
 }
 
+.alterar {
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+.botoes {
+   position: relative;
+   right: 5%;
+   bottom: 10%;
+   display: flex;
+}
+
 /****************************** Equipamentos *****/
 
 .equipamentos {
